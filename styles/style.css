@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+    }
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+    }
+
+    body {
+        margin: 0;
+        font-family: "PT Sans", sans-serif;
+        font-size: 18px;
+        line-height: 21px;
+        color: #333333;
+        background-color: #f2f2f2;
+    }
+
+    .container-index,
+    .container-catalog {
+        background-color: #ffffff;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /*Шапка*/
+
+    .page-header {
+        color: #000000;
+    }
+
+    .navigation-link {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #000000;
+        text-transform: capitalize;
+        text-decoration: none;
+    }
+
+    .navigation-link-current {
+        text-decoration: underline;
+    }
+
+    /*Основное содержание*/
+
+    .hero {
+        background-image: url("../images/index/background.jpg");
+        background-color: #00bfff;
+        color: #ffffff;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    .lead {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        color:#000000;
+    }
+
+    .lead-description {
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .advantages-title,
+    .services-title {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    .advantages-description,
+    .services-description {
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .advantages-list li:nth-of-type(1),
+    .advantages-list li:nth-of-type(5) {
+        background-color: #82B3D3;
+    }
+
+    .advantages-item:nth-of-type(1) h3,
+    .advantages-item:nth-of-type(1) p,
+    .advantages-item:nth-of-type(5) h3,
+    .advantages-item:nth-of-type(5) p {
+        color: #ffffff;
+    }
+
+    .advantages-list li:nth-of-type(even),
+    .services-list li:nth-of-type(odd) {
+        background-color: rgba(131, 179, 211, 0.12);
+    }
+
+    .advantages-list li:nth-of-type(3) {
+        background-color: rgba(131, 179, 211, 0.2);
+    }
+
+    .wrapper-newsletter {
+        background-image: url("../images/index/subscribe.jpg");
+        background-color: #00bfff;
+        color: #ffffff;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    } 
+
+    .lead-newsletter {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .lead-description-newsletter {
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .newsletter-form input[type="email"] {
+        font-family: "PT Sans", sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        color: #000000;
+    }
+
+    .wrapper-filter {
+        background-image: url("../images/catalog/filter.jpg");
+        background-color: #cd9575;
+        color: #ffffff;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    .inner-header-title {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 78px;
+    }
+
+    .breadcumbs-link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .filter-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: capitalize;
+    }
+
+    .control-input {
+        font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .search-hotels-description {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    .select-control {
+        font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+    }
+
+    .hotel-card-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    .hotel-card-link {
+        text-decoration: none;
+    }
+
+    .hotel-rating {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .pagination-link:not(.pagination-link-ponts):not(.pagination-current) {
+        font-family: "PT Sans", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000000;
+        background-color: #82b3d3;
+    }
+
+    .pagination-current {
+        background-color: #f2f2f2;
+    }
+
+    .pagination-link-points {
+        font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    /*Кнопки*/
+
+    .button {
+        font-family: "PT Sans", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: #756157;
+    }
+
+    .button-search {
+        font-size: 20px;
+        line-height: 36px;
+        text-decoration: none;
+    }
+
+    .newsletter-button {
+        font-size: 20px;
+        line-height: 36px;
+        background: #82B3D3;
+    }
+
+    .button-submit,
+    .button-favorites {
+        background-color: #82b3d3;
+    }
+
+    .button-reset {
+        background-color: rgba(131, 179, 211, 0);
+    }
+
+    .button-favorites-choose {
+        background-color: #7db54f;
+    }
+
+    .hotel-card-button {
+        text-decoration: none;
+    }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    /*Подвал*/
+
+    .footer-contacts-phone {
+        font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000000;
+    }
+
