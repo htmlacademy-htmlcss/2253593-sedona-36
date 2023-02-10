@@ -22,9 +22,20 @@
         color: #333333;
         background-color: #f2f2f2;
     }
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
 
-    .container-index,
-    .container-catalog {
+    .container {
         background-color: #ffffff;
     }
 
@@ -49,7 +60,6 @@
         line-height: 24px;
         font-weight: 700;
         color: #000000;
-        text-transform: capitalize;
         text-decoration: none;
     }
 
@@ -83,8 +93,7 @@
         text-align: center;
     }
 
-    .advantages-list,
-    .services-list {
+    .advantages-list {
         list-style: none;
     }
 
@@ -104,18 +113,7 @@
         color: #000000;
     }
 
-    .services-item {
-        background-color: rgba(131, 179, 211, 0.12);
-        color: #000000;
-    }
-
-    .services-list li:nth-of-type(2)  {
-        background-color: #ffffff;
-        color: #000000;
-    }
-
-    .advantages-title,
-    .services-title {
+    .advantages-title {
         font-size: 24px;
         line-height: 28px;
         font-weight: 700;
@@ -131,6 +129,28 @@
     .advantages-description-road,
     .advantages-description-tourist {
         color: #333333;
+    }
+
+    .services-list {
+        list-style: none;
+    }
+
+    .services-item {
+        background-color: rgba(131, 179, 211, 0.12);
+        color: #000000;
+    }
+
+    .services-list li:nth-of-type(2)  {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .services-title {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
     }
 
     .services-description {
@@ -161,11 +181,12 @@
         text-align: center;
     }
 
-    .newsletter-form input[type="email"] {
+    .field {
         font-family: "PT Sans", sans-serif;
         font-size: 18px;
         line-height: 24px;
         color: #000000;
+        background-color: #f2f2f2;
     }
 
     .wrapper-filter {
@@ -188,7 +209,10 @@
         line-height: 21px;
     }
 
-    .filter-infrastructure-list,
+    .filter-infrastructure-list {
+        list-style: none;
+    }
+
     .filter-housing-list {
         list-style: none;
     }
@@ -197,10 +221,9 @@
         font-weight: 700;
         font-size: 20px;
         line-height: 24px;
-        text-transform: capitalize;
     }
 
-    .control-input {
+    .control {
         font-family: "PT Sans", sans-serif;
         font-weight: 400;
         font-size: 18px;
@@ -220,7 +243,7 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
-        color: #000000;
+        color: #333333;
     }
 
     .hotel-card-list {
@@ -232,6 +255,10 @@
         font-size: 24px;
         line-height: 28px;
         color: #000000;
+    }
+
+    .hotel-card-price {
+        font-weight: 400;
     }
 
     .hotel-card-link {
@@ -257,12 +284,13 @@
         text-align: center;
         text-transform: uppercase;
         text-decoration: none;
-        color: #000000;
+        color: #ffffff;
         background-color: #82b3d3;
     }
 
     .pagination-current {
         background-color: #f2f2f2;
+        color: #000000;
     }
 
     .pagination-link-points {
@@ -315,17 +343,6 @@
 
     .hotel-card-button {
         text-decoration: none;
-    }
-
-    .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        padding: 0;
-        border: 0;
-        clip: rect(0 0 0 0);
-        overflow: hidden;
     }
 
     /*Подвал*/
