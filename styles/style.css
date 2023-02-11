@@ -14,14 +14,34 @@
     font-display: swap;
     }
 
+    html {
+        height: 100%;
+    }
+
     body {
         margin: 0;
+        height: 100%;
         font-family: "PT Sans", sans-serif;
         font-size: 18px;
         line-height: 21px;
         color: #333333;
         background-color: #f2f2f2;
     }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 1200px;
+        min-height: 100%;
+        margin: 0 auto;
+    }
+
+    img {
+        background-size: cover;
+        object-fit: contain;
+    }
+
     .visually-hidden {
         position: absolute;
         width: 1px;
@@ -35,24 +55,45 @@
         overflow: hidden;
     }
 
-    .container {
-        background-color: #ffffff;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
     /*Шапка*/
 
     .page-header {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1200px;
+        min-height: 64px;
+        position: relative;
+        margin: 0;
+        padding: 0;
         color: #000000;
     }
 
+    .logo {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 70px;
+        margin-right: 30px;
+        position: absolute;
+    }
+
+    .navigation {
+        display: flex;
+        max-width: 890px;
+    }
+
     .navigation-list {
+        display: flex;
+        flex-wrap: wrap;
         list-style: none;
+        margin: 0;
+        padding: 0;
+        padding-right: 0 auto;
+        min-width: 339px;
+    }
+
+    .navigation-user {
+        min-width: 268px;
+        margin-left: auto;
     }
 
     .navigation-link {
@@ -69,12 +110,17 @@
 
     /*Основное содержание*/
 
+    .main-container {
+        flex-grow: 1;
+    }
+
     .hero {
         background-image: url("../images/index/background.jpg");
         background-color: #00bfff;
         color: #ffffff;
         background-size: 100% auto;
         background-repeat: no-repeat;
+
     }
 
     .lead {
@@ -94,6 +140,8 @@
     }
 
     .advantages-list {
+        display: flex;
+        flex-wrap: wrap;
         list-style: none;
     }
 
@@ -132,6 +180,8 @@
     }
 
     .services-list {
+        display: flex;
+        flex-wrap: wrap;
         list-style: none;
     }
 
