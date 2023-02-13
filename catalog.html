@@ -26,7 +26,7 @@
             <a class="navigation-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск.</span>
@@ -39,12 +39,12 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link button" href="#">Хочу сюда!</a>
+            <a class="navigation-link button button-header" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-container main-inner">
       <div class="wrapper-filter">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -108,8 +108,13 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button button-submit" type="submit">Применить</button>
-            <button class="button button-reset" type="reset">Сбросить</button>
+            <fieldset class="filter-group">
+              <legend class="filter-title">Стоимость, ₽:</legend>
+            </fieldset>
+            <div class="filter-buttons">
+              <button class="button button-submit" type="submit">Применить</button>
+              <button class="button button-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
       </div>
