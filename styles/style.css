@@ -94,6 +94,7 @@
 
     .navigation-user {
         justify-content: flex-end;
+        align-items: center;
         max-width: 440px;
     }
 
@@ -155,41 +156,32 @@
     .advantages-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        text-align: center;
         margin: 0;
         padding: 0;
-        list-style: none;
+        list-style-type: none;
     }
 
-    .advantages-item {
+    .advantages-item-container {
         background-color: #82B3D3;
         color: #ffffff;
-        margin: 0;
-        padding: 0;
-        width: 400px;
-        min-height: 385px;
+        padding: 90px 85px;
+        width: 230px;
+        min-height: 200px;
     }
 
     .advantages-item-picture {
         display: flex;
-        width: 1200px;
-        height: 385px;
     }
 
-    .advantages-item-text {
-        margin: 102px 85px;
-    }
-
-    .advantages-item-square,
-    .advantages-item-tourist {
+    .advantages-item-container-square,
+    .advantages-item-container-tourist {
         background-color: rgba(131, 179, 211, 0.12);
-        color: #000000;
+        color: #333333;
     }
 
-    .advantages-item-road {
+    .advantages-item-container-road {
         background-color: rgba(131, 179, 211, 0.2);
-        color: #000000;
+        color: #333333;
     }
 
     .advantages-title {
@@ -200,21 +192,14 @@
         text-transform: uppercase;
     }
 
+    .advantages-description {
+        text-align: center;
+    }  
+
     .advantages-title-square,
     .advantages-title-road,
     .advantages-title-tourist {
-        margin: 112.5px 112.5px 60px;
-    }
-
-    .advantages-description {
-        text-align: center;
-    }   
-
-    .advantages-description-square,
-    .advantages-description-road,
-    .advantages-description-tourist {
-        color: #333333;
-        margin: 0 85px 112.5px;
+        color: #000000;
     }
 
     .services-list {
@@ -222,7 +207,7 @@
         flex-wrap: wrap;
         margin: 0;
         padding: 0;
-        list-style: none;
+        list-style-type: none;
     }
 
     .services-item {
@@ -258,12 +243,6 @@
         margin: 0;
         padding: 0;
         min-height: 406px;
-    }
-
-    .button-search {
-        width: 376px;
-        height: 52px;
-        margin: 0 auto;
     }
 
     .wrapper-newsletter {
@@ -560,6 +539,7 @@
     /*Кнопки*/
 
     .button {
+        display: block;
         font-family: "PT Sans", sans-serif;
         font-weight: 700;
         font-size: 16px;
@@ -568,6 +548,8 @@
         text-transform: uppercase;
         color: #ffffff;
         background-color: #756157;
+        padding: 0;
+        margin: 0;
     }
 
     .button-header {
@@ -578,6 +560,9 @@
         font-size: 20px;
         line-height: 36px;
         text-decoration: none;
+        margin: 0 auto;
+        padding: 8px 50px;
+        width: 376px;
     }
 
     .newsletter-button {
@@ -627,8 +612,8 @@
 
     .hotel-card-button {
         width: 140px;
-        min-height: 36px;
         margin: 0 20px 16px;
+        padding: 8px 26px;
         text-decoration: none;
     }
 
