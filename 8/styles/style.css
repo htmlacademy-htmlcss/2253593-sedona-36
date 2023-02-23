@@ -573,6 +573,8 @@
     }
 
     .hotel-card-item {
+        display: flex;
+        flex-direction: column;
         margin: 0;
         padding: 20px;
         width: 340px;
@@ -583,6 +585,7 @@
         display: grid;
         grid-template-columns: repeat(2, 140px);
         gap: 16px 20px;
+        margin-top: auto;
     }
 
     .hotel-card-image {
@@ -604,7 +607,7 @@
     }
 
     .hotel-card-button {
-        padding: 8px 26px;
+        padding: 8px 16px;
         text-decoration: none;
     }
 
