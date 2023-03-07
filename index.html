@@ -196,6 +196,49 @@
       </section>
     </footer>
   </div>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-search">
+      <button class="modal-close-button" type="button">
+        <span class="visually-hidden">Закрыть.</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="field-group-date">
+            <legend class="check-in-date">Дата заезда:</legend>
+            <label class="check-in-date-control" for="check-in-date">
+            <input class="check-in-date-field field" type="text" id="check-in-date" name="check-in-date"
+              value="27 апреля 2020">
+            </label>
+          </fieldset>
+          <fieldset class="field-group-date">
+            <legend class="check-out-date">Дата выезда:</legend>
+            <label class="check-out-date-control" for="check-out-date">
+              <input class="check-out-date-field field" type="text" id="check-out-date" name="check-out-date"
+                value="1 сентября 2023">
+            </label>
+          </fieldset>
+          <fieldset class="field-group-adults">
+            <legend class="adults">Взрослые:</legend>
+            <label class="adults-control" for="adults">
+              <button class="button min-button">-</button>
+              <input class="adults-field field" type="number" id="adults" name="adults" value="2">
+              <button class="button max-button">+</button>
+            </label>
+          </fieldset>
+          <fieldset class="field-group-children">
+            <legend class="children">Дети:</legend>
+            <label class="children-control" for="children">
+              <button class="button min-button">-</button>
+              <input class="children-field field" type="number" id="children" name="children" value="2">
+              <button class="button max-button">+</button>
+            </label>
+          </fieldset>
+          <button class="button search-form-button" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>
