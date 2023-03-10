@@ -300,12 +300,14 @@
 
     .advantages-item-picture {
         display: flex;
+        justify-content: space-between;
         width: 1200px;
         margin: 0;
         padding: 0;
     }
 
     .advantages-item-container {
+        width: 400px;
         padding: 100px 84px;
     }
 
@@ -522,6 +524,7 @@
     }
 
     .field {
+        height: 52px;
         padding: 12px 20px;
         flex-grow: 1;
         font-family: "PT Sans", sans-serif;
@@ -665,18 +668,19 @@
 
     .modal-container {
         position: fixed;
-        top: 62px;
+        top: 0;
         left: 0;
+        z-index: 1;
         display: flex;
         width: 100%;
         height: 100%;
         background-color: rgba(242, 242, 242, 0.8);
     }
-
+/*
     .modal-container-close {
         display: none;
     }
-
+*/
     .modal {
         position: relative;
         margin: auto;
@@ -700,18 +704,34 @@
         background-color: #f2f2f2;
         border: none;
         border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .modal-close-button::after {
+        position: absolute;
+        top: 17px;
+        right: 17px;
+        width: 19px;
+        height: 21px;
         background-image: url("../images/index/close.svg");
         background-repeat: no-repeat;
         background-position: center;
-        cursor: pointer;
+        content: "";
     }
 
     .modal-close-button:hover {
         background-color: #e6e6e6;
     }
 
+    .modal-close-button:focus {
+        background-color: #e6e6e6;
+    }
+
     .modal-close-button:active {
         background-color: #e6e6e6;
+    }
+
+    .modal-close-button:active::after {
         opacity: 0.3;
     }
 
@@ -746,6 +766,7 @@
     .check-in-date {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 577px;
         margin: 0;
         margin-bottom: 4px;
@@ -763,16 +784,41 @@
     }
 
     .check-in-date-field {
+        flex-grow: 1;
+        height: 48px;
         padding: 11px 20px;
+        font-family: "PT Sans", sans-serif;
+        font-size: 18px;
+        line-height: 24px;
         font-weight: 700;
         border-radius: 4px;
-        background-image: url("../images/index/calendar.svg");
+        color: #000000;
+        background-color: #f2f2f2;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        background-image: url("../images/index/date.svg");
         background-repeat: no-repeat;
         background-position: right 20px center;
+        cursor: pointer;
+    }
+
+    input::placeholder {
+        color: rgba(0, 0, 0, 0.6);
     }
 
     input:hover::placeholder {
         color: rgba(0, 0, 0, 0.6);
+    }
+
+    .check-in-date-field:focus {
+        background-color: #f2f2f2;
+        border: 2px solid #000000;
+    }
+
+    .check-in-date-field:placeholder-shown {
+        color: #000000;
+        background-color: #f2f2f2;
+        border: 2px solid #000000;
     }
 
     .modal-error {
@@ -788,6 +834,7 @@
     .check-out-date {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 577px;
         margin: 0;
         margin-bottom: 2px;
@@ -795,15 +842,40 @@
     }
 
     .check-out-date-field {
+        flex-grow: 1;
+        height: 48px;
+        padding: 11px 20px;
+        font-family: "PT Sans", sans-serif;
+        font-size: 18px;
+        line-height: 24px;
         font-weight: 700;
         border-radius: 4px;
-        background-image: url("../images/index/calendar.svg");
+        color: #000000;
+        background-color: #f2f2f2;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        background-image: url("../images/index/date.svg");
         background-repeat: no-repeat;
         background-position: right 20px center;
+        cursor: pointer;
+    }
+
+    .check-out-date-field:hover {
+        color: rgba(0, 0, 0, 0.6);
+        background-color: #e6e6e6;
+    }
+
+    .check-out-date-field:focus {
+        background-color: #f2f2f2;
+        border: 2px solid #000000;
+    }
+
+    .check-out-date-field:placeholder-shown {
+        color: #000000;
+        background-color: #f2f2f2;
     }
 
     .modal-description {
-        align-self: center;
         margin: 0;
         margin-bottom: 25px;
         padding-left: 157px;
@@ -818,7 +890,6 @@
         justify-content: space-between;
         width: 577px;
         margin: 0;
-        margin-bottom: 48px;
         padding: 0;
         border: none;
     }
@@ -826,14 +897,16 @@
     .adults {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 247px;
+        height: 48px;
         margin: 0;
         padding: 0;
     }
 
     .min-button {
         width: 40px;
-        min-height: 48px;
+        height: 48px;
         color: rgba(117, 97, 87, 0.3);
         border: none;
         border-radius: 0;
@@ -851,13 +924,24 @@
         color: rgba(0, 0, 0, 0.2);
     }
 
+    .minus-icon {
+        margin: 13px 10px;
+    }
+
     .adults-field  {
+        flex-grow: 1;
         width: 31px;
-        min-height: 48px;
+        height: 48px;
+        font-family: "PT Sans", sans-serif;
+        font-size: 18px;
         line-height: 21px;
         font-weight: 700;
         text-align: center;
+        color: #000000;
+        background-color: #f2f2f2;
+        border: 2px solid transparent;
         border-radius: 0;
+        appearance: textfield;
     }
 
     .adults-field::-webkit-outer-spin-button,
@@ -868,8 +952,7 @@
 
     .max-button {
         width: 40px;
-        min-height: 48px;
-        padding: 12px 5px;
+        height: 48px;
         color: rgba(117, 97, 87, 0.3);
         border: none;
         border-radius: 0;
@@ -887,27 +970,40 @@
         color: rgba(0, 0, 0, 0.2);
     }
 
+    .plus-icon {
+        margin: 13px 10px;
+    }
+
     .children {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 242px;
+        height: 48px;
         margin: 0;
         padding: 0;
     }
 
     .form-label-icon {
         position: relative;
+        margin-right: 11px;
         padding-right: 60px;
     }
 
     .children-field {
+        flex-grow: 1;
         width: 31px;
-        min-height: 48px;
-        padding: 8px 5px;
+        height: 48px;
+        font-family: "PT Sans", sans-serif;
+        font-size: 18px;
         line-height: 21px;
         font-weight: 700;
         text-align: center;
+        color: #000000;
+        background-color: #f2f2f2;
+        border: 2px solid transparent;
         border-radius: 0;
+        appearance: textfield;
     }
 
     .children-field::-webkit-outer-spin-button,
@@ -931,17 +1027,18 @@
         border: none;
         background-image: url("../images/index/tooltip.svg");
         background-repeat: no-repeat;
+        cursor: pointer;
     }
 
     .tooltip-text {
         position: absolute;
-        top: 100%;
-        left: 50%;
+        top: 42px;
+        left: 10px;
         z-index: 1;
         display: none;
         width: 256px;
         margin-bottom: 7px;
-        padding: 15px 18px 18px 22px;
+        padding: 22px 18px 22px 22px;
         font-size: 16px;
         line-height: 20px;
         font-weight: 400;
@@ -972,6 +1069,7 @@
 
     .search-form-button {
         width: 577px;
+        margin-top: 48px;
         padding: 18px 100px;
         font-size: 20px;
         line-height: 24px;
@@ -1191,8 +1289,15 @@
         opacity: 0.3;
     }
 
+    .range {
+        width: 288px;
+        min-height: 104px;
+    }
+
     .range-wrapper-inputs {
         display: flex;
+        width: 288px;
+        min-height: 48px;
         margin-bottom: 44px;
     }
 
