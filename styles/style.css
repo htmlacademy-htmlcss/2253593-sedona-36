@@ -1783,8 +1783,24 @@
         background-position: left;
     }
 
+    .rating-star-one {
+        width: 21px;
+    }
+
+    .rating-star-two {
+        width: 42px;
+    }
+
+    .rating-star-three {
+        width: 66px;
+    }
+
     .rating-star-four {
         width: 88px;
+    }
+
+    .rating-star-five {
+        width: 105px;
     }
 
     .hotel-rating {
@@ -1822,15 +1838,7 @@
     .button-favorites-choose:disabled {
         background-color: #e5e5e5;
     }
-
-    .rating-star-three {
-        width: 66px;
-    }
-
-    .rating-star-two {
-        width: 42px;
-    }
-
+   
     .pagination {
         display: flex;
         margin: 0;
