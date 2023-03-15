@@ -735,11 +735,11 @@
         height: 100%;
         background-color: rgba(242, 242, 242, 0.8);
     }
-
+/*
     .modal-container-close {
         display: none;
     }
-
+*/
     .modal {
         position: relative;
         margin: auto;
@@ -755,7 +755,7 @@
 
     .modal-close-button {
         position: absolute;
-        top: 52px;
+        top: 60px;
         right: 51px;
         width: 52px;
         height: 52px;
