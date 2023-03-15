@@ -130,6 +130,10 @@
         color: #756157;
     }
 
+    .navigation-link:active:not(.navigation-link-current) {
+        opacity: 0.3;
+    }
+
     .navigation-user {
         display: flex;
         flex-wrap: wrap;
@@ -200,6 +204,7 @@
         display: block;
         margin: 0;
         padding: 0;
+        font-family: "PT Sans", sans-serif;
         font-size: 16px;
         line-height: 20px;
         font-weight: 700;
@@ -213,6 +218,7 @@
     .button-header {
         margin-left: 20px;
         padding: 8px 34px;
+        max-width: 200px;
         color: #ffffff;
         background-color: #756157;
     }
@@ -243,7 +249,7 @@
     .hero {
         position: relative;
         margin: 0 auto;
-        padding: 51px 100px 75px;
+        padding: 50px 100px 75px;
         text-align: center;
         color: #ffffff;
         background-color: #82b3d3;
@@ -325,13 +331,13 @@
 
     .advantages-item-container {
         width: 400px;
-        padding: 100px 84px;
+        padding: 104px 85px 100px;
     }
 
     .advantages-title {
         position: relative;
         margin: 0;
-        margin-bottom: 30px;
+        margin-bottom: 31px;
         padding-bottom: 30px;
         font-size: 24px;
         line-height: 28px;
@@ -361,13 +367,13 @@
 
     .advantages-item-square,
     .advantages-item-tourist {
-        padding: 112px 84px;
+        padding: 115px 84px 100px;
         color: #333333;
         background-color: rgba(131, 179, 211, 0.12);
     }
 
     .advantages-item-road {
-        padding: 112px 84px;
+        padding: 115px 84px 100px;
         color: #333333;
         background-color: rgba(131, 179, 211, 0.2);
     } 
@@ -385,20 +391,20 @@
     }
 
     .services {
-        padding-top: 64px;
+        padding-top: 65px;
         padding-bottom: 0;
     }
 
     .services-container {
         width: 660px;
         margin: 0 auto;
-        margin-bottom: 64px;
+        margin-bottom: 62px;
         text-align: center;
     }
 
     .lead-services {
         margin-top: 0;
-        margin-bottom: 20px;
+        margin-bottom: 22px;
         font-size: 30px;
         line-height: 36px;
         font-weight: 700;
@@ -407,7 +413,7 @@
     }
 
     .description-services {
-        margin-top: 0;
+        margin: 0;
         font-size: 22px;
         line-height: 26px;
         font-weight: 400;
@@ -430,7 +436,7 @@
     .services-item {
         width: 400px;
         min-height: 385px;
-        padding: 183px 85px 81px;
+        padding: 184px 85px 81px;
         background-color: rgba(131, 179, 211, 0.12);
     }
 
@@ -469,7 +475,7 @@
     }
 
     .search-hotel {
-        padding: 96px 200px;
+        padding: 96px 200px 97px;
         text-align: center;
     }
 
@@ -528,13 +534,13 @@
 
     .newsletter {
         margin: 0;
-        padding: 96px 150px 104px;
+        padding: 94px 150px 104px;
         text-align: center;
     }
 
     .lead-newsletter {
         margin-top: 0;
-        margin-bottom: 20px;
+        margin-bottom: 21px;
         font-size: 30px;
         line-height: 36px;
         font-weight: 700;
@@ -544,7 +550,7 @@
 
     .description-newsletter {
         margin-top: 0;
-        margin-bottom: 55px;
+        margin-bottom: 54px;
         font-size: 22px;
         line-height: 26px;
         font-weight: 400;
@@ -749,7 +755,7 @@
 
     .modal-close-button {
         position: absolute;
-        top: 65px;
+        top: 52px;
         right: 51px;
         width: 52px;
         height: 52px;
@@ -762,13 +768,14 @@
 
     .modal-close-button::after {
         position: absolute;
-        top: 17px;
-        right: 17px;
-        width: 19px;
-        height: 21px;
+        top: 19px;
+        right: 19px;
+        width: 14px;
+        height: 14px;
         background-image: url("../images/index/close.svg");
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 14px 14px;
         content: "";
     }
 
@@ -839,7 +846,7 @@
     .check-in-date-field {
         flex-grow: 1;
         height: 48px;
-        padding: 11px 20px;
+        padding: 11px 45px 11px 20px;
         font-family: "PT Sans", sans-serif;
         font-size: 18px;
         line-height: 24px;
@@ -891,7 +898,7 @@
     .check-out-date-field {
         flex-grow: 1;
         height: 48px;
-        padding: 11px 20px;
+        padding: 11px 45px 11px 20px;
         font-family: "PT Sans", sans-serif;
         font-size: 18px;
         line-height: 24px;
@@ -1001,6 +1008,10 @@
                 appearance: none;
     }
 
+    .adults-field:hover {
+        color: rgba(0, 0, 0, 0.6);
+    }
+
     .adults-field:disabled {
         color: rgba(0, 0, 0, 0.6);
     }
@@ -1072,6 +1083,10 @@
                 appearance: none;
     }
 
+    .children-field:hover {
+        color: rgba(0, 0, 0, 0.6);
+    }
+
     .children-field:disabled {
         color: rgba(0, 0, 0, 0.6);
     }
@@ -1105,7 +1120,7 @@
         display: none;
         width: 256px;
         margin-bottom: 7px;
-        padding: 21px 22px 20px 22px;
+        padding: 21px 21px 20px 22px;
         font-size: 16px;
         line-height: 20px;
         font-weight: 400;
@@ -1198,28 +1213,28 @@
 
     .breadcumbs {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         margin: 0;
         padding: 0;
         list-style-type: none;
     }
 
-    .breadcumbs-item:not(:last-child) {
-        position: relative;
-        padding-right: 10px;
-        margin-right: 20px;
+    .breadcumbs-item {
+        display: flex;
+        align-items: center;
         list-style-type: none;
     }
 
-    .breadcumbs-item::after {
-        position: absolute;
-        top: 1px;
-        right: -10px;
+    .breadcumbs-item:not(:last-of-type)::after {
+        display: inline-block;
         width: 8px;
         height: 11px;
-        padding: 5px;
+        margin-right: 10px;
         background-image: url("../images/catalog/arrow.svg");
         background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 8px 11px;
         content: "";
     }
 
@@ -1227,6 +1242,7 @@
         display: block;
         width: 13px;
         height: 15px;
+        margin-right: 10px;
         color: #ffffff;
         background-image: url("../images/catalog/home.svg");
         background-repeat: no-repeat;
@@ -1242,6 +1258,8 @@
     }
 
     .breadcumbs-link {
+        display: inline-block;
+        margin-right: 10px;
         font-size: 16px;
         line-height: 21px;
         font-weight: 400;
@@ -1294,9 +1312,9 @@
     .control-input[type="checkbox"]:checked + .control-mark::before {
         position: absolute;
         top: 4px;
-        left: 3px;
-        width: 12.2px;
-        height: 9.9px;
+        left: 4px;
+        width: 12px;
+        height: 10px;
         background-image: url("../images/catalog/checkmark.svg");
         background-repeat: no-repeat;
         content: "";
@@ -1304,12 +1322,11 @@
 
     .control-mark {
         position: absolute;
-        top: 1px;
+        top: 2px;
         left: 0;
         width: 20px;
         height: 20px;
         background-color: #ffffff;
-        border: 3px solid #ffffff;
         border-radius: 4px;
     }
 
@@ -1319,8 +1336,8 @@
 
     .control-input[type="radio"]:checked + .control-mark::before {
         position: absolute;
-        top: 2px;
-        left: 2px;
+        top: 4px;
+        left: 4px;
         width: 10px;
         height: 10px;
         background-color: #3f5e72;
@@ -1333,7 +1350,7 @@
     }
 
     .control-input:focus + .control-mark {
-        border: 3px solid #83b3d3;
+        box-shadow: 0 0 0 3px #83b3d3;
     }
 
     .control:active {
@@ -1341,9 +1358,11 @@
     }
 
     .control-input:disabled + .control-mark {
-        color: rgba(0, 0, 0, 0.3);
-        background-color: #e5e5e5;
-        border-color: rgba(0, 0, 0, 0.3);
+        opacity: 0.1;
+    }
+
+    .control-input:disabled ~ .control-label {
+        opacity: 0.1;
     }
 
     .filter-group-housing {
@@ -1392,6 +1411,7 @@
         width: 142px;
         margin-right: 2px;
         padding: 10px 40px 10px 18px;
+        font-family: "PT Sans", sans-serif;
         font-size: 18px;
         line-height: 24px;
         font-weight: 700;
@@ -1413,8 +1433,7 @@
     }
 
     .range-input:disabled {
-        color: rgba(0, 0, 0, 0.3);
-        border-color: rgba(0, 0, 0, 0.3);
+        opacity: 0.1;
     }
 
     .range-input-max {
@@ -1466,15 +1485,13 @@
     }
 
     .range-toggle:focus {
-        border: 3px solid #83b3d3;
+        outline: 3px solid #83b3d3;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-        outline: none;
     }
 
     .range-toggle:active {
-        border: 2px solid #83b3d3;
+        outline: 2px solid #83b3d3;
         box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
-        outline: none;
     }
 
     .toggle-min {
@@ -1551,7 +1568,7 @@
 
     .products {
         margin: 0;
-        padding: 49px 70px 60px;
+        padding: 50px 70px 62px;
     }
 
     .search-hotels {
@@ -1560,12 +1577,12 @@
         width: 1060px;
         min-height: 49px;
         margin: 0;
-        margin-bottom: 41px;
+        margin-bottom: 39px;
         padding: 0;
     }
 
     .search-hotels-description {
-        width: 438px;
+        width: 440px;
         min-height: 36px;
         margin: 0;
         margin-right: 100px;
@@ -1585,6 +1602,7 @@
         line-height: 21px;
         font-weight: 400;
         color: #333333;
+        background-color: #ffffff;
         border: 2px solid #e5e5e5;
         border-radius: 4px;
         background-image: url("../images/catalog/arrow-down.svg");
@@ -1599,7 +1617,7 @@
     }
 
     .select-control:focus {
-        border-color: #3f5e72;
+        border-color: #68a2ca;
         outline: none;
     }
 
@@ -1611,7 +1629,7 @@
     .view-buttons-list {
         display: flex;
         justify-content: flex-end;
-        max-width: 220px;
+        min-width: 160px;
         min-height: 48px;
         margin: 0;
         padding: 0;
@@ -1841,13 +1859,11 @@
    
     .pagination {
         display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
         margin: 0;
         padding: 0;
         list-style-type: none;
-    }
-
-    .pagination-item:not(:last-child) {
-        margin-right: 8px;
     }
 
     .pagination-link {
