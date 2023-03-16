@@ -160,6 +160,7 @@
         background-image: url("../images/header/search.svg");
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 20px 20px;
     }
 
     .navigation-link-search:hover {
@@ -177,6 +178,7 @@
         background-image: url("../images/header/heart.svg");
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 20px 20px;
     }
 
     .navigation-link-favorites:hover {
@@ -444,18 +446,21 @@
         background-image: url("../images/index/house.svg");
         background-repeat: no-repeat;
         background-position: 163.5px 81px;
+        background-size: 75px 72px;
     }
 
     .services-item-food {
         background-image: url("../images/index/food.svg");
         background-repeat: no-repeat;
         background-position: 162.5px 81px;
+        background-size: 75px 72px;
     }
 
     .services-item-souvenir {
         background-image: url("../images/index/souvenirs.svg");
         background-repeat: no-repeat;
         background-position: 162.5px 81px;
+        background-size: 75px 72px;
     }
 
     .services-title {
@@ -859,6 +864,7 @@
         background-image: url("../images/index/date.svg");
         background-repeat: no-repeat;
         background-position: right 20px center;
+        background-size: 20px 20px;
         cursor: pointer;
     }
 
@@ -911,6 +917,7 @@
         background-image: url("../images/index/date.svg");
         background-repeat: no-repeat;
         background-position: right 20px center;
+        background-size: 20px 20px;
         cursor: pointer;
     }
 
@@ -1109,6 +1116,7 @@
         border: none;
         background-image: url("../images/index/tooltip.svg");
         background-repeat: no-repeat;
+        background-size: 26px 26px;
         cursor: pointer;
     }
 
@@ -1141,6 +1149,7 @@
         margin-left: auto;
         margin-right: auto;
         background-image: url("../images/index/tooltip-arrow.svg");
+        background-size: 19px 9px;
         content:'';
       }
 
@@ -1247,6 +1256,7 @@
         background-image: url("../images/catalog/home.svg");
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 13px 15px;
     }
     
     .breadcumbs-link-home:hover {
@@ -1275,7 +1285,7 @@
     .filter-group-infrastructure {
         width: 151px;
         margin: 0;
-        margin-right: 70px;
+        margin-right: 68px;
         padding: 0;
         border: none;
     }
@@ -1311,12 +1321,13 @@
 
     .control-input[type="checkbox"]:checked + .control-mark::before {
         position: absolute;
-        top: 4px;
+        top: 5px;
         left: 4px;
         width: 12px;
         height: 10px;
         background-image: url("../images/catalog/checkmark.svg");
         background-repeat: no-repeat;
+        background-size: 13px 11px;
         content: "";
     }
 
@@ -1336,8 +1347,9 @@
 
     .control-input[type="radio"]:checked + .control-mark::before {
         position: absolute;
-        top: 4px;
-        left: 4px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
         width: 10px;
         height: 10px;
         background-color: #3f5e72;
@@ -1368,7 +1380,7 @@
     .filter-group-housing {
         width: 151px;
         margin: 0;
-        margin-right: 139px;
+        margin-right: 141px;
         padding: 0;
         border: none;
     }
@@ -1608,6 +1620,7 @@
         background-image: url("../images/catalog/arrow-down.svg");
         background-repeat: no-repeat;
         background-position: right 20px center;
+        background-size: 12px 9px;
         -webkit-appearance: none;
                 appearance: none;
     }
@@ -1674,18 +1687,21 @@
         background-image: url("../images/catalog/cards.svg");
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 16px 14px;
     }
 
     .view-button-card {
         background-image: url("../images/catalog/card-description.svg");
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 16px 14px;
     }
 
     .view-button-list {
         background-image: url("../images/catalog/card-list.svg");
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 16px 14px;
     }
 
     .hotel-card-list {
@@ -1799,6 +1815,7 @@
         background-image: url("../images/catalog/star.svg");
         background-repeat: space;
         background-position: left;
+        background-size: 18px 17px;
     }
 
     .rating-star-one {
